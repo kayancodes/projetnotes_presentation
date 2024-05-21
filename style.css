@@ -227,11 +227,6 @@ img {
   margin: 1rem 0;
 }
 
-.redirection.site:hover {
-  background-color: lightcoral !important;
-  border: lightcoral;
-}
-
 .readExemple.top {
   margin-top: 2rem;
 }
