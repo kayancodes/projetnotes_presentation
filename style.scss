@@ -1,0 +1,1134 @@
+
+//IMPORTS
+@import "responsive/breakpoints.scss";
+@import "responsive/devices.scss";
+
+
+
+
+/* ===================== DEBUT GOOGLE FONTS ======================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400&display=swap');
+
+
+
+
+
+/* DEBUT ROOT*/
+:root{
+
+
+/*--------COLOR--------------------------*/   
+--color0:#fff;
+--color1:#efefef;
+--color2:#d4d4d4;
+--color3:#adadad;
+--color4:#f7f7f7;
+// $color4:#8E8E8E;
+--color5:#000; 
+--color6:#404040;
+--color7:#4472c4;
+--color8:#181c35;
+
+
+
+
+
+/*--------FONT AND TYPOGRAPHY---------------------------*/
+--title-font:'Roboto', sans-serif;
+--body-font: 'Roboto', sans-serif;
+
+
+--h1-font-size:2.1em;
+--h1-font-size-Mobile:1.9rem;
+--h2-font-size:1.4rem;
+// --h3-font-size:0.8125rem;
+--h3-font-size: 1.25rem !important;
+
+--normal-plus:0.9rem;
+--normal-font-size: 0.9rem;
+--small-font-size:0.9rem;
+--smaller-font-size:0.4375rem;
+
+// --normal-font-size: 0.8125rem;
+// --small-font-size:0.5625rem;
+// --smaller-font-size:0.4375rem;
+
+// @include md{
+//     // --h1-font-size:2.8rem;
+//     --h2-font-size:1.3rem;
+//     --h3-font-size:0.9375rem;
+//     --normal-font-size:0.8125rem;
+//     --small-font-size:0.625rem;
+//     --smaller-font-size:0.4375rem
+// }
+
+
+/*--------FONT WEIGHT----------------------------------------------------------*/
+--font-thin: 100;
+--font-extraL: 200;
+--font-light: 300;
+--font-regular: 400;
+--font-medium: 500;
+--font-semi-bold: 600;
+--font-bold: 700;
+
+
+/*--------MARGIN BOTTOM---------------------------*/
+--mb-30:0.9375rem;
+--mb-40:1.25rem;
+--mb-50:3.125rem;
+--mb-60:3.75rem;
+--mb-70:4.375rem;
+--mb-80:5rem;
+--mb-100:6.25rem;
+--mb-150:9.375rem;
+
+@include md{
+    --mb-30:1.875rem;
+    --mb-40:2.5rem;
+    --mb-50:3.125rem;
+    --mb-60:3.75rem;
+    --mb-100:6.25rem;
+}
+
+}
+
+
+
+
+
+
+
+
+//===================== DEBUT BASE - RESET HTML ==========================================//
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-family: var(--title-font);
+    font-size: var(--h1-font-size-Mobile);
+    font-weight: var(--font-medium);
+    margin-bottom: .5rem;
+    color: var(--color5);
+    text-align: left;
+}
+
+
+h2{
+    font-family: var(--body-font);
+    font-weight: var(--font-regular);
+    margin-bottom: 1rem;
+    font-size: var(--h2-font-size);
+    color: var(--color7);
+    line-height: 2rem;
+}
+
+h2.title{
+    color: var(--color3);
+}
+
+h3{
+    font-family: var(--title-font);
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-regular);
+    color:var(--color8);
+    margin-bottom: .5rem;
+}
+
+
+
+
+p, li{
+    font-family: var(--body-font);
+    color:var(--color5);
+    font-weight: var(--font-light);
+    font-size: var(--normal-plus);
+    line-height: 1.4rem;
+}
+
+p, ul{
+    margin-bottom: .6rem;
+}
+
+
+.firstP{
+    margin-top: var(--mb-50);
+}
+
+
+li{
+    margin-top: .5rem;
+    line-height: 1.3rem;
+}
+
+p.gonogo{
+ margin-top: 2rem;
+}
+
+
+.board_zero--chapitreSectionTitre{
+    font-weight: 400;
+    color: var(--color7);
+    // font-size: 1.2rem;
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+main{
+    width: 100%;
+    display: block;
+    margin: 4.6875rem auto 0;
+    padding: 0 2rem;
+}
+
+// .board p{
+//     margin-bottom: .8rem !important;
+// }
+
+
+.margin_top{
+    margin-top: 3rem;
+}
+
+.margin_top_0{
+    margin-top: 0 !important;
+}
+
+.margin_top_2{
+    margin-top: 2rem;
+}
+.margin_top_5{
+    margin-top: 5rem;
+}
+
+.margin_bottom_0{
+    margin-bottom: 0 !important;
+}
+
+.padding_left{
+    padding-left: 5rem !important;
+}
+
+.padding_left.ano{
+padding-left: 0;
+}
+
+
+.first{
+    margin-top: var(--mb-50) !important;
+    // background-color: orange;
+}
+
+
+.objectif{
+    font-weight: var(--font-medium);
+}
+
+.fontweight500{
+    font-weight: 500;
+}
+
+//--------- DEBUT IMAGES----------//
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.img_cecs{
+    width: 100%;
+}
+
+.img_middle{
+    width: 100%;
+}
+
+
+//--------- FIN IMAGES----------//
+
+
+
+
+
+
+
+//---------------------------------DEBUT BUTTONS-----------------------------------//
+
+//----- DEBUT BUTTON 1 DE BASE -----------------------//
+.button {
+    font-family: var(--title-font);
+    display: inline-block;
+    background-color:var(--color5);
+    color: var(--color5);
+    padding: .5rem 2rem;
+    font-weight: var(--font-medium);
+    font-size: var(--small-font-size);
+    transition: .3s;
+}
+.button:hover {
+    background-color: var(--color6);
+}
+//----- FINBUTTON 1 DE BASE -----------------------//
+
+
+//----- DEBUT BUTTON THEME HEADER -----------------------//
+.buttonBack{
+    background-color: var(--color5);
+    border: 1px solid var(--color5);
+    color:var(--color0);
+}
+.buttonBack:hover {
+    background-color:--color6;
+    color:var(--color0);
+    font-weight:var(--font-semi-bold);
+    border: 1px solid var(--color6);
+}
+
+.redirection{
+    padding: .5rem 4rem;
+    margin: 3rem 0 0;
+}
+
+// .redirection.code{
+//     padding: .5rem 4.2rem;
+//     margin: 1rem 0;
+//     // border: 1px solid red;
+// }
+
+.redirection.site{
+    padding: .5rem 4.2rem;
+    margin: 1rem 0;
+    // border: 1px solid red;
+}
+
+// .interbouton{
+//     color:orange
+// }
+//----- FIN BUTTON THEME HEADER -----------------------//
+
+
+.readExemple.top{
+    // border:1px solid green;
+    margin-top:2rem;
+}
+
+.readExemple{
+    // border:1px solid green;
+    margin-top:5rem;
+}
+
+img.icone_intra{
+    width:20px !important;
+    margin:0 5px;
+    border: 2px solid #4472c4;
+    display: inline;
+}
+
+span.style_intra{
+color:#4472c4;
+font-weight: 500;
+}
+
+.textCrud{
+color:#4472c4;
+font-weight: 500;
+}
+
+//===================== FIN BASE - RESET HTML ==========================================//
+
+
+
+
+
+
+
+
+
+//------------ DEBUT VERSION MOBILE FIRST ( > 414px)------------------------------------------------------------------//
+
+
+/*===================== DEBUT MAIN_HEADER ==========================================*/
+.main_header{
+    text-align: left;
+    margin-bottom: 4rem;
+}
+/*===================== FIN MAIN_HEADER ==========================================*/
+
+
+
+/*===================== DEBUT INTRODUCTION==========================================*/
+
+//----- DEBUT INTRODUCTION UN ---------------------------------------//
+.main__body .introduction{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: var(--mb-70);
+}
+
+
+.introduction_img{
+    margin-bottom: var(--mb-50);
+}
+.introduction_img--un{
+    margin-bottom: var(--mb-50);
+}
+.introduction_img--deux{
+    margin-bottom: var(--mb-50);
+}
+
+
+.main__body .introduction_texte{
+    width: 100%;
+    margin-bottom: var(--mb-60);
+    text-align: left;
+}
+.main__body .introduction_texte p{
+    // border: 1px solid red;
+    margin-bottom: 1.2rem;
+    }
+.main__body .introduction_button{
+    text-align: left;
+    margin-top: 20px;
+}
+
+
+.main__body .introduction_infos{
+    width: 100%;
+    display: flex;
+    font-size: 11px;
+    margin: 0rem 0;
+}
+.main__body .introduction_infos h3{
+    font-size: 13px;
+    margin-bottom: .2rem;
+}
+.main__body .introduction_infos p{
+    font-size: 13px;
+}
+
+
+.main__body .introduction_infos--gauche{
+    width: 50%;
+}
+.gauche_item{
+    margin-bottom: 1.2rem;
+}
+.gauche_item:last-child{
+    margin-bottom: 0rem;
+}
+.main__body .introduction_infos--gauche p, .main__body .introduction_infos--droite p{
+line-height: 1.3rem;
+}
+
+
+.main__body .introduction_infos--droite{
+    width: 50%;
+}
+.droite_item{
+    margin-bottom: 1.2rem;
+}
+.droite_item:last-child{
+    margin-bottom: 0rem;
+}
+
+/*===================== FIN INTRODUCTION=======================================================*/
+
+
+
+
+
+/*===================== DEBUT SOMMAIRE =======================================================*/
+
+.main__body{
+    .sommaire{
+        // border: 1px solid purple;
+        margin-top: 10rem !important;
+    }
+
+    .board_zero--chapitreSection{
+        // border: 1px solid green;
+        margin-top: 1.3rem;
+    }
+
+    .board.board_zero.sommaire{
+        p{
+            margin-bottom: 0 !important;
+        }
+
+        li{
+            // border: 1px solid pink;
+            margin-top: .2rem;
+        }
+    }
+}
+     
+/*===================== FIN SOMMAIRE =======================================================*/
+
+
+
+
+
+
+/*=====================DEBUT IMG INTER BOARDS=======================================================*/
+
+
+.board_img--header{
+    margin-top: 10rem;
+    // border: 1px solid red;
+}
+
+/*===================== FIN IMG INTER BOARDS=======================================================*/
+
+
+
+
+
+/*===================== DEBUT PRESENTATION PROJET =======================================================*/
+
+.main__body{
+    .padding_leftCourt{
+        // border: 1px solid red;
+        padding-left: 1.7rem;
+    }
+
+    .Board_sousBoard.presentation{
+        .board_infos{
+            .box4{
+                .boxin{
+                    // border: 1px solid green;
+                    margin-bottom:3rem;
+
+                    img{
+                        // border: 1px solid blue;
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
+     
+/*===================== FIN PRESENTATION PROJET =======================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===================== DEBUT BOARD =======================================================*/
+.main__body .board{
+
+    margin-top:var(--mb-150);
+    // border: 1px solid red;
+
+    p.chapitreTitre{
+        font-family: var(--body-font);
+        color:var(--color5);
+        font-weight: 400;
+        font-size: 2.1rem;
+        line-height: 2.2rem;
+        margin-bottom: 3rem;
+    
+    }
+
+
+/*============ DEBUT PRESENTATION ===============*/
+
+.Board_sousBoard.presentation{
+    // border: 1px solid blue;
+    margin-top: 15rem;
+    // border:1px solid red;
+}
+
+.Board_sousBoard.presentation first{
+    // border: 1px solid blue;
+    margin-top: var(--mb-75);
+}
+
+
+
+/*============ FIN PRESENTATION ===============*/
+
+
+    .board_infos{
+        margin-bottom: 2rem
+        // border: 1px solid green;
+    }
+
+    .Board_sousBoard{
+        // border: 1px solid blue;
+        margin-top: 18rem;
+    }
+
+    .Board_sousBoard--item{
+        // border: 1px solid green;
+        margin-top: 12rem;
+    }
+
+
+
+    .indicateurs{
+        // border: 1px solid pink;
+        margin-top: 2rem;
+        font-weight: 500 !important;
+        // padding-left: 5rem;
+    }
+
+
+
+
+
+
+    .board_img--itemCourt{
+        margin-top: 0.3rem;
+        // margin-bottom:1.5rem;
+    }
+
+    .board_img--item{
+        margin : 1.5rem 0;
+
+    }
+
+    .board_img--item.border{
+        border:1px solid #eee;
+
+    }
+
+
+
+
+
+
+
+
+    // .board_item{
+    //     // border: 1px solid blue;
+    //     margin-bottom: var(--mb-60);
+    // }
+    
+    // .board_item:last-child{
+    //     margin-bottom: 0rem;
+    // }
+    
+
+
+
+
+    // .board_zero--chapitre{
+    //     // border: 1px solid green;
+    //     margin-bottom: var(--mb-40);
+    // }
+
+    // .board_zero--chapitreTitre{
+    //     margin-bottom: .5rem;
+    // }
+
+    // .board_zero--chapitreSection{
+    //     // border: 1px solid pink;
+    //     margin-bottom: 1.3rem;
+    // }
+
+
+
+////////////////////
+
+
+
+
+
+
+
+
+    .board_chapitre{
+        // border: 1px solid pink;
+        margin-bottom: 5rem;
+    }
+
+
+
+
+
+
+// ---------- DEBUT FLEXBOX BOX ----------------//
+    .box4{
+        // border: 1px solid red;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+
+        .boxin{
+            // border: 1px solid blue;
+            width: 100%;
+            text-align: center;
+            padding: 0 1rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .boxin p{
+            font-family: var(--body-font);
+            color:var(--color5);
+            font-weight: var(--font-light);
+            font-size: var(--normal-font-size);
+            line-height: 1.7rem;
+        }
+
+        img{
+            width: 60%;
+        }
+
+    }
+
+
+
+
+
+    .box5{
+        // border: 1px solid red;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+
+        .boxin5{
+            // border:1px solid red;
+            width: 100%;
+            text-align: left;
+            padding: 0 .5rem;
+            margin-top: 4rem;
+
+        }
+
+        .boxin5.margin_top_ecranmobile{
+            // border: 1px solid pink;
+            margin-top: 1rem;
+        }
+
+        .boxin5 p{
+            font-family: var(--body-font);
+            color:var(--color5);
+            font-weight: var(--font-light);
+            font-size: var(--normal-font-size);
+            line-height: 1.7rem;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        p{
+            margin-bottom: 0 !important;
+        }
+
+    }
+// ---------- FIN FLEXBOX BOX ----------------//
+
+}
+
+
+
+
+
+
+
+
+
+// .main__body .board:last-of-type{
+//         margin-bottom: 10rem;
+//         // background-color: red;
+// }
+
+
+
+.liste_bpmn li{
+    // border: 1px solid olivedrab;
+    margin-bottom: 1rem;
+
+}
+
+
+
+
+
+
+
+/*===================== FIN BOARD =======================================================*/
+
+
+
+
+//========DEBUT SCROLL UP==============================================//
+.scrollup{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    background-color: var(--color5);
+    padding: .35rem .5rem;
+    border-radius: .0rem;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+    color: white;
+}
+
+.scrollup:hover{
+    background-color: var(--color6);
+
+}
+
+.scrollup__icon{
+    font-size:1rem;
+    color: #fff;
+}
+
+.show-scroll{
+    bottom: 5rem;
+}
+//========FIN SCROLL UP==============================================//
+
+
+
+
+/*===================== DEBUT FOOTER ==========================================*/
+footer{
+    width: 100%;
+    // border-bottom:1px solid var(--color0) ;
+    border-top: 1px solid #efefef;
+    margin-top: 15rem;
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--color0);
+    padding: 1.5rem 0;
+}
+
+.footer__inner p{
+    color:var(--color5);
+    padding: 0 0.625rem;
+    font-weight:var(--font-normal);
+    font-family: var(--body-font);
+    font-size: 14px;
+}
+/*===================== FIN FOOTER ==========================================*/
+
+//------------ FIN VERSION MOBILE FIRST ( > 414px)------------------------------------------------------------//
+
+
+
+
+
+
+
+/*===================== DEBUT RESPONSIVE ====================================================================================*/
+
+//------------ DEBUT S ( > 414px) : small smartphones (landscape view) ---------//
+@include s{
+
+
+
+
+
+
+}
+//------------ FIN S ( > 414px) : small smartphones (landscape view) ---------//
+
+
+//------------ DEBUT SM ( > 568px) : ssmall tablets and large smartphones (landscape view) ---------//
+@include sm{
+
+
+
+
+}
+//------------ FIN SM ( > 568px) : small tablets and large smartphones (landscape view) ---------//
+
+
+
+//------------ DEBUT MD ( > 768px) : small tablets and large smartphones (landscape view) ---------//
+@include md{
+
+    h1{
+        font-size: var(--h1-font-size);
+    }
+
+    main{
+        padding: 0 4rem;
+    }
+
+
+    .main_header{
+        text-align: left;
+        margin-bottom: 8rem;
+    }
+    .main_header h1{
+        text-align: left;
+    }
+    .main_header h2{
+        text-align: left;
+        margin-bottom: var(--mb-30);
+    }
+
+
+    .main__body .introduction{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        }
+        
+    .main__body .introduction_texte{
+        width: 60%;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        padding-right: 5rem;
+    }
+    .main__body .introduction_button{
+        text-align: left;
+        margin-top: 15px;
+    }
+
+    .main__body .introductionSuite_texte{
+        margin-top: 2rem;
+    }
+        
+    .main__body .introduction_infos{
+        width: 40%;
+    }
+
+    .main__body .introduction_infos {
+        margin: 0;
+        padding-top: 0.4rem;
+    }
+
+
+    .scrollup {
+        right:0.5rem;
+    }
+
+
+
+//------------------DEBUT FLEXBOX------------------//
+
+
+.main__body .board .box4{
+        // border: 1px solid red;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+
+        .boxin{
+            // border: 1px solid blue;
+            width: 25%;
+            text-align: center;
+            padding: 0 1rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .boxin p{
+            font-family: var(--body-font);
+            color:var(--color5);
+            font-weight: var(--font-light);
+            font-size: var(--normal-font-size);
+            line-height: 1.7rem;
+        }
+
+        img{
+            width: 60%;
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main__body .board .box5{
+    // border: 1px solid red;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+    .boxin5{
+        // border: 1px solid red;
+        width: 48%;
+        text-align: left;
+        padding: 0 1.5rem;
+        margin-top: 4rem;
+        margin-bottom: 0rem;
+    }
+
+    .boxin5.margin_top_ecranmobile{
+        // border: 1px solid pink;
+        margin-top: 2rem;
+    }
+
+    .boxin5.margin_top_ecranmobile2{
+        // border: 1px solid green;
+        margin-top: 2rem;
+    }
+
+
+
+
+}
+
+
+
+//------------------FIN FLEXBOX----------------------//
+
+
+//--------- DEBUT IMAGES----------//
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.img_cecs{
+    width: 90%;
+}
+
+.img_exe_test{
+    width: 45%;
+}
+
+.img_type_fonctionnalite{
+    width: 45%;
+}
+
+
+.img_campagne_f{
+    width: 45%;
+}
+
+.img_anomalie{
+    width: 60%;
+}
+
+
+.img_decision{
+    width: 60%;
+}
+
+.img_gonogo{
+    width: 100%;
+}
+
+.img_middle{
+    width: 40%;
+}
+
+
+//--------- FIN IMAGES----------//
+
+
+
+
+.indicateurs{
+    // border: 1px solid pink;
+    margin-top: 2rem;
+    padding-left: 5rem;
+}
+
+
+.padding_left.ano{
+    padding-left: 5rem;
+    }
+
+
+
+}
+//------------ FIN MD ( > 768px) : small tablets and large smartphones (landscape view) ---------//
+
+
+
+//------------ DEBUT LG ( > 962px) : Tablets and small desktops ---------//
+@include lg{
+
+    .main{
+        width: 1140px;
+        padding: 0 5rem;
+    }
+
+
+    // p{
+    //     // font-family: var(--body-font);
+    //     // color:var(--color5);
+    //     // font-weight: var(--font-light);
+    //     font-size: var(--normal-plus);
+    // }
+    
+
+    .main__body .introduction_texte{
+        padding-right: 10rem;
+    }
+
+    .main__body .introductionSuite_texte {
+        margin-top: 2rem;
+    }
+
+    .main__body .introduction_texte {
+        width: 70%;
+    }
+    .main__body .introduction_infos {
+        width: 30%;
+    }
+
+
+    .scrollup {
+        right:.7rem;
+    }
+   
+
+    .footer__inner a{
+        font-size: var(--normal-font-size);
+   }
+}
+//------------ FIN LG ( > 962px) : Tablets and small desktops ---------//
+
+
+/*===================== FIN RESPONSIVE ====================================================================================*/
+

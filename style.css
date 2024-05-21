@@ -1,0 +1,704 @@
+/* ===================== DEBUT GOOGLE FONTS ======================================================*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,900&display=swap");
+/* DEBUT ROOT*/
+:root {
+  /*--------COLOR--------------------------*/
+  --color0:#fff;
+  --color1:#efefef;
+  --color2:#d4d4d4;
+  --color3:#adadad;
+  --color4:#f7f7f7;
+  --color5:#000;
+  --color6:#404040;
+  --color7:#4472c4;
+  --color8:#181c35;
+  /*--------FONT AND TYPOGRAPHY---------------------------*/
+  --title-font:"Roboto", sans-serif;
+  --body-font: "Roboto", sans-serif;
+  --h1-font-size:2.1em;
+  --h1-font-size-Mobile:1.9rem;
+  --h2-font-size:1.4rem;
+  --h3-font-size: 1.25rem !important;
+  --normal-plus:0.9rem;
+  --normal-font-size: 0.9rem;
+  --small-font-size:0.9rem;
+  --smaller-font-size:0.4375rem;
+  /*--------FONT WEIGHT----------------------------------------------------------*/
+  --font-thin: 100;
+  --font-extraL: 200;
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+  /*--------MARGIN BOTTOM---------------------------*/
+  --mb-30:0.9375rem;
+  --mb-40:1.25rem;
+  --mb-50:3.125rem;
+  --mb-60:3.75rem;
+  --mb-70:4.375rem;
+  --mb-80:5rem;
+  --mb-100:6.25rem;
+  --mb-150:9.375rem;
+}
+@media (min-width: 768px) {
+  :root {
+    --mb-30:1.875rem;
+    --mb-40:2.5rem;
+    --mb-50:3.125rem;
+    --mb-60:3.75rem;
+    --mb-100:6.25rem;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: var(--title-font);
+  font-size: var(--h1-font-size-Mobile);
+  font-weight: var(--font-medium);
+  margin-bottom: 0.5rem;
+  color: var(--color5);
+  text-align: left;
+}
+
+h2 {
+  font-family: var(--body-font);
+  font-weight: var(--font-regular);
+  margin-bottom: 1rem;
+  font-size: var(--h2-font-size);
+  color: var(--color7);
+  line-height: 2rem;
+}
+
+h2.title {
+  color: var(--color3);
+}
+
+h3 {
+  font-family: var(--title-font);
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-regular);
+  color: var(--color8);
+  margin-bottom: 0.5rem;
+}
+
+p, li {
+  font-family: var(--body-font);
+  color: var(--color5);
+  font-weight: var(--font-light);
+  font-size: var(--normal-plus);
+  line-height: 1.4rem;
+}
+
+p, ul {
+  margin-bottom: 0.6rem;
+}
+
+.firstP {
+  margin-top: var(--mb-50);
+}
+
+li {
+  margin-top: 0.5rem;
+  line-height: 1.3rem;
+}
+
+p.gonogo {
+  margin-top: 2rem;
+}
+
+.board_zero--chapitreSectionTitre {
+  font-weight: 400;
+  color: var(--color7);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  width: 100%;
+  display: block;
+  margin: 4.6875rem auto 0;
+  padding: 0 2rem;
+}
+
+.margin_top {
+  margin-top: 3rem;
+}
+
+.margin_top_0 {
+  margin-top: 0 !important;
+}
+
+.margin_top_2 {
+  margin-top: 2rem;
+}
+
+.margin_top_5 {
+  margin-top: 5rem;
+}
+
+.margin_bottom_0 {
+  margin-bottom: 0 !important;
+}
+
+.padding_left {
+  padding-left: 5rem !important;
+}
+
+.padding_left.ano {
+  padding-left: 0;
+}
+
+.first {
+  margin-top: var(--mb-50) !important;
+}
+
+.objectif {
+  font-weight: var(--font-medium);
+}
+
+.fontweight500 {
+  font-weight: 500;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.img_cecs {
+  width: 100%;
+}
+
+.img_middle {
+  width: 100%;
+}
+
+.button {
+  font-family: var(--title-font);
+  display: inline-block;
+  background-color: var(--color5);
+  color: var(--color5);
+  padding: 0.5rem 2rem;
+  font-weight: var(--font-medium);
+  font-size: var(--small-font-size);
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: var(--color6);
+}
+
+.buttonBack {
+  background-color: var(--color5);
+  border: 1px solid var(--color5);
+  color: var(--color0);
+}
+
+.buttonBack:hover {
+  background-color: --color6;
+  color: var(--color0);
+  font-weight: var(--font-semi-bold);
+  border: 1px solid var(--color6);
+}
+
+.redirection {
+  padding: 0.5rem 4rem;
+  margin: 3rem 0 0;
+}
+
+.redirection.site {
+  padding: 0.5rem 4.2rem;
+  margin: 1rem 0;
+}
+
+.readExemple.top {
+  margin-top: 2rem;
+}
+
+.readExemple {
+  margin-top: 5rem;
+}
+
+img.icone_intra {
+  width: 20px !important;
+  margin: 0 5px;
+  border: 2px solid #4472c4;
+  display: inline;
+}
+
+span.style_intra {
+  color: #4472c4;
+  font-weight: 500;
+}
+
+.textCrud {
+  color: #4472c4;
+  font-weight: 500;
+}
+
+/*===================== DEBUT MAIN_HEADER ==========================================*/
+.main_header {
+  text-align: left;
+  margin-bottom: 4rem;
+}
+
+/*===================== FIN MAIN_HEADER ==========================================*/
+/*===================== DEBUT INTRODUCTION==========================================*/
+.main__body .introduction {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: var(--mb-70);
+}
+
+.introduction_img {
+  margin-bottom: var(--mb-50);
+}
+
+.introduction_img--un {
+  margin-bottom: var(--mb-50);
+}
+
+.introduction_img--deux {
+  margin-bottom: var(--mb-50);
+}
+
+.main__body .introduction_texte {
+  width: 100%;
+  margin-bottom: var(--mb-60);
+  text-align: left;
+}
+
+.main__body .introduction_texte p {
+  margin-bottom: 1.2rem;
+}
+
+.main__body .introduction_button {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.main__body .introduction_infos {
+  width: 100%;
+  display: flex;
+  font-size: 11px;
+  margin: 0rem 0;
+}
+
+.main__body .introduction_infos h3 {
+  font-size: 13px;
+  margin-bottom: 0.2rem;
+}
+
+.main__body .introduction_infos p {
+  font-size: 13px;
+}
+
+.main__body .introduction_infos--gauche {
+  width: 50%;
+}
+
+.gauche_item {
+  margin-bottom: 1.2rem;
+}
+
+.gauche_item:last-child {
+  margin-bottom: 0rem;
+}
+
+.main__body .introduction_infos--gauche p, .main__body .introduction_infos--droite p {
+  line-height: 1.3rem;
+}
+
+.main__body .introduction_infos--droite {
+  width: 50%;
+}
+
+.droite_item {
+  margin-bottom: 1.2rem;
+}
+
+.droite_item:last-child {
+  margin-bottom: 0rem;
+}
+
+/*===================== FIN INTRODUCTION=======================================================*/
+/*===================== DEBUT SOMMAIRE =======================================================*/
+.main__body .sommaire {
+  margin-top: 10rem !important;
+}
+.main__body .board_zero--chapitreSection {
+  margin-top: 1.3rem;
+}
+.main__body .board.board_zero.sommaire p {
+  margin-bottom: 0 !important;
+}
+.main__body .board.board_zero.sommaire li {
+  margin-top: 0.2rem;
+}
+
+/*===================== FIN SOMMAIRE =======================================================*/
+/*=====================DEBUT IMG INTER BOARDS=======================================================*/
+.board_img--header {
+  margin-top: 10rem;
+}
+
+/*===================== FIN IMG INTER BOARDS=======================================================*/
+/*===================== DEBUT PRESENTATION PROJET =======================================================*/
+.main__body .padding_leftCourt {
+  padding-left: 1.7rem;
+}
+.main__body .Board_sousBoard.presentation .board_infos .box4 .boxin {
+  margin-bottom: 3rem;
+}
+.main__body .Board_sousBoard.presentation .board_infos .box4 .boxin img {
+  margin-bottom: 1rem;
+}
+
+/*===================== FIN PRESENTATION PROJET =======================================================*/
+/*===================== DEBUT BOARD =======================================================*/
+.main__body .board {
+  margin-top: var(--mb-150);
+  /*============ DEBUT PRESENTATION ===============*/
+  /*============ FIN PRESENTATION ===============*/
+}
+.main__body .board p.chapitreTitre {
+  font-family: var(--body-font);
+  color: var(--color5);
+  font-weight: 400;
+  font-size: 2.1rem;
+  line-height: 2.2rem;
+  margin-bottom: 3rem;
+}
+.main__body .board .Board_sousBoard.presentation {
+  margin-top: 15rem;
+}
+.main__body .board .Board_sousBoard.presentation first {
+  margin-top: var(--mb-75);
+}
+.main__body .board .board_infos {
+  margin-bottom: 2rem;
+}
+.main__body .board .Board_sousBoard {
+  margin-top: 18rem;
+}
+.main__body .board .Board_sousBoard--item {
+  margin-top: 12rem;
+}
+.main__body .board .indicateurs {
+  margin-top: 2rem;
+  font-weight: 500 !important;
+}
+.main__body .board .board_img--itemCourt {
+  margin-top: 0.3rem;
+}
+.main__body .board .board_img--item {
+  margin: 1.5rem 0;
+}
+.main__body .board .board_img--item.border {
+  border: 1px solid #eee;
+}
+.main__body .board .board_chapitre {
+  margin-bottom: 5rem;
+}
+.main__body .board .box4 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main__body .board .box4 .boxin {
+  width: 100%;
+  text-align: center;
+  padding: 0 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.main__body .board .box4 .boxin p {
+  font-family: var(--body-font);
+  color: var(--color5);
+  font-weight: var(--font-light);
+  font-size: var(--normal-font-size);
+  line-height: 1.7rem;
+}
+.main__body .board .box4 img {
+  width: 60%;
+}
+.main__body .board .box5 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main__body .board .box5 .boxin5 {
+  width: 100%;
+  text-align: left;
+  padding: 0 0.5rem;
+  margin-top: 4rem;
+}
+.main__body .board .box5 .boxin5.margin_top_ecranmobile {
+  margin-top: 1rem;
+}
+.main__body .board .box5 .boxin5 p {
+  font-family: var(--body-font);
+  color: var(--color5);
+  font-weight: var(--font-light);
+  font-size: var(--normal-font-size);
+  line-height: 1.7rem;
+}
+.main__body .board .box5 img {
+  width: 100%;
+}
+.main__body .board .box5 p {
+  margin-bottom: 0 !important;
+}
+
+.liste_bpmn li {
+  margin-bottom: 1rem;
+}
+
+/*===================== FIN BOARD =======================================================*/
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  background-color: var(--color5);
+  padding: 0.35rem 0.5rem;
+  border-radius: 0rem;
+  z-index: var(--z-tooltip);
+  transition: 0.4s;
+  color: white;
+}
+
+.scrollup:hover {
+  background-color: var(--color6);
+}
+
+.scrollup__icon {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.show-scroll {
+  bottom: 5rem;
+}
+
+/*===================== DEBUT FOOTER ==========================================*/
+footer {
+  width: 100%;
+  border-top: 1px solid #efefef;
+  margin-top: 15rem;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color0);
+  padding: 1.5rem 0;
+}
+
+.footer__inner p {
+  color: var(--color5);
+  padding: 0 0.625rem;
+  font-weight: var(--font-normal);
+  font-family: var(--body-font);
+  font-size: 14px;
+}
+
+/*===================== FIN FOOTER ==========================================*/
+/*===================== DEBUT RESPONSIVE ====================================================================================*/
+@media (min-width: 768px) {
+  h1 {
+    font-size: var(--h1-font-size);
+  }
+
+  main {
+    padding: 0 4rem;
+  }
+
+  .main_header {
+    text-align: left;
+    margin-bottom: 8rem;
+  }
+
+  .main_header h1 {
+    text-align: left;
+  }
+
+  .main_header h2 {
+    text-align: left;
+    margin-bottom: var(--mb-30);
+  }
+
+  .main__body .introduction {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .main__body .introduction_texte {
+    width: 60%;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding-right: 5rem;
+  }
+
+  .main__body .introduction_button {
+    text-align: left;
+    margin-top: 15px;
+  }
+
+  .main__body .introductionSuite_texte {
+    margin-top: 2rem;
+  }
+
+  .main__body .introduction_infos {
+    width: 40%;
+  }
+
+  .main__body .introduction_infos {
+    margin: 0;
+    padding-top: 0.4rem;
+  }
+
+  .scrollup {
+    right: 0.5rem;
+  }
+
+  .main__body .board .box4 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main__body .board .box4 .boxin {
+    width: 25%;
+    text-align: center;
+    padding: 0 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .main__body .board .box4 .boxin p {
+    font-family: var(--body-font);
+    color: var(--color5);
+    font-weight: var(--font-light);
+    font-size: var(--normal-font-size);
+    line-height: 1.7rem;
+  }
+  .main__body .board .box4 img {
+    width: 60%;
+  }
+
+  .main__body .board .box5 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .main__body .board .box5 .boxin5 {
+    width: 48%;
+    text-align: left;
+    padding: 0 1.5rem;
+    margin-top: 4rem;
+    margin-bottom: 0rem;
+  }
+  .main__body .board .box5 .boxin5.margin_top_ecranmobile {
+    margin-top: 2rem;
+  }
+  .main__body .board .box5 .boxin5.margin_top_ecranmobile2 {
+    margin-top: 2rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .img_cecs {
+    width: 90%;
+  }
+
+  .img_exe_test {
+    width: 45%;
+  }
+
+  .img_type_fonctionnalite {
+    width: 45%;
+  }
+
+  .img_campagne_f {
+    width: 45%;
+  }
+
+  .img_anomalie {
+    width: 60%;
+  }
+
+  .img_decision {
+    width: 60%;
+  }
+
+  .img_gonogo {
+    width: 100%;
+  }
+
+  .img_middle {
+    width: 40%;
+  }
+
+  .indicateurs {
+    margin-top: 2rem;
+    padding-left: 5rem;
+  }
+
+  .padding_left.ano {
+    padding-left: 5rem;
+  }
+}
+@media (min-width: 962px) {
+  .main {
+    width: 1140px;
+    padding: 0 5rem;
+  }
+
+  .main__body .introduction_texte {
+    padding-right: 10rem;
+  }
+
+  .main__body .introductionSuite_texte {
+    margin-top: 2rem;
+  }
+
+  .main__body .introduction_texte {
+    width: 70%;
+  }
+
+  .main__body .introduction_infos {
+    width: 30%;
+  }
+
+  .scrollup {
+    right: 0.7rem;
+  }
+
+  .footer__inner a {
+    font-size: var(--normal-font-size);
+  }
+}
+/*===================== FIN RESPONSIVE ====================================================================================*/
+
+/*# sourceMappingURL=style.css.map */
